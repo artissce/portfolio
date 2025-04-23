@@ -14,7 +14,7 @@
               class="mx-2"
             ></v-btn>
             <p class="mt-4 text-caption">
-              © {{ new Date().getFullYear() }} — Hecho con <v-icon icon="mdi-heart" color="red" size="small"></v-icon>
+              © {{ new Date().getFullYear() }} — {{t('made_with')}} <v-icon icon="mdi-heart" color="red" size="small"></v-icon>
             </p>
           </v-col>
         </v-row>
@@ -23,6 +23,9 @@
   </template>
   
   <script setup>
+  import { useI18n } from 'vue-i18n' 
+
+  const { t } = useI18n()
   const socialIcons = [
     { name: 'mdi-github', link: 'https://github.com/artissce' },
     { name: 'mdi-linkedin', link: 'https://www.linkedin.com/in/ana-karen-cuenca-esquivel-a513302b8/' },

@@ -1,0 +1,17 @@
+{
+    "app": {
+      "title": "Portfolio",
+      "home": "Startseite",
+      "projects": "Projekte",
+      "about": "Über mich"
+    },
+    "homePage": {
+      "welcome": "Willkommen in meinem kreativen Raum"
+    },
+    "language": {
+        "en": "Englisch",
+        "es": "Spanisch",
+        "de": "Deutsch"
+    },
+    "made_with": "Hergestellt mit"
+}
