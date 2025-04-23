@@ -1,9 +1,7 @@
 <template>
     <v-app-bar flat color="transparent" class="px-4" :elevation="0">
 
-      <v-avatar size="40">
-        <v-img src="/logo.png" alt="Logo" />
-      </v-avatar>
+    
       
       <v-toolbar-title class="font-weight-bold text-primary">Portfolio</v-toolbar-title>
       
