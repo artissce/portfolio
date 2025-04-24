@@ -100,7 +100,7 @@
 
 <script setup>
 import { useTheme } from 'vuetify'
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
 import { useI18n } from 'vue-i18n' 
 
 const { t, locale, availableLocales } = useI18n()
@@ -108,11 +108,10 @@ const { t, locale, availableLocales } = useI18n()
 const theme = useTheme()
 const isDark = ref(theme.global.current.value.dark)
 
-const navItems = [
-  { text: 'Home', route: '/', icon: 'mdi-home' },
-  { text: 'Projects', route: '/projects', icon: 'mdi-folder' },
-  { text: 'About', route: '/about', icon: 'mdi-information' }
-]
+const navItems = computed(() => [
+  { text: t('app.home'), route: '/', icon: 'mdi-home' },
+  { text: t('app.projects'), route: '/projects', icon: 'mdi-folder' }
+])
 const setLocale = (newLocale) => {
   locale.value = newLocale
   localStorage.setItem('user-lang', newLocale) // Persistencia

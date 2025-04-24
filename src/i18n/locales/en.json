@@ -6,12 +6,29 @@
       "about": "About"
     },
     "homePage": {
-      "welcome": "Welcome to my creative space"
+      "greeting": "Hello, I'm Ana CE!",
+      "introduction": "I am an Information Technology Engineer, passionate about creating impactful digital experiences.",
+      "myProjects": "My Projects",
+      "meetMe": "Meet Me"
     },
     "language": {
         "en": "English",
         "es": "Spanish",
         "de": "German"
+    },
+    "about": {
+      "title": "About Me",
+      "intro": "Information Technology Engineer with Mexican-U.S. nationality. One semester away from graduating at the Polytechnic University of SLP. Specialized in Full Stack development and data analysis with a focus on innovative solutions.",
+      "skills_title": "My Technical Skills",
+      "experience_title": "Professional Experience",
+      "exp1_title": "IT Intern",
+      "exp1_company": "BMW Group",
+      "exp1_date":" (2025 - Present)",
+      "exp1_desc": "Development of enterprise applications with Vue.js/Vuetify and creation of interactive dashboards with Power BI for real-time data analysis.",
+      "exp2_title": "Purchasing Intern",
+      "exp2_company": "Continental Tire",
+      "exp2_date":" (Jul 2024 - Dec 2024)",
+      "exp2_desc": "Automation of financial reports and development of dashboards for the purchasing area, improving decision-making efficiency by 40%."
     },
     "made_with": "Made with"
   }

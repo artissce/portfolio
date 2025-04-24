@@ -6,12 +6,29 @@
       "about": "Acerca de"
     },
     "homePage": {
-      "welcome": "Bienvenido a mi espacio creativo"
+      "greeting": "¡Hola, soy Ana CE!",
+      "introduction": "Soy una ingeniera en tecnologías de la información, apasionada por crear experiencias digitales impactantes.",
+      "myProjects": "Mis proyectos",
+      "meetMe": "Conóceme"
     },
     "language": {
         "en": "Ingles",
         "es": "Español",
         "de": "Alemán"
     },
+    "about": {
+      "title": "Sobre Mí",
+      "intro": "Ingeniera en Tecnologías de la informacion con nacionalidad México-EE.UU. A un semestre de graduarme en la Universidad Politécnica de SLP. Especializada en desarrollo Full Stack y análisis de datos con enfoque en soluciones innovadoras.",
+      "skills_title": "Mis Habilidades Técnicas",
+      "experience_title": "Experiencia Profesional",
+      "exp1_title": "Intern de TI",
+      "exp1_company": "BMW Group ",
+      "exp1_date":"(2025 - Presente)",
+      "exp1_desc": "Desarrollo de aplicaciones empresariales con Vue.js/Vuetify y creación de dashboards interactivos con Power BI para análisis de datos en tiempo real.",
+      "exp2_title": "Intern de Compras",
+      "exp2_company": "Continental Tire",
+      "exp2_date":" (Jul 2024 - Dic 2024)",
+      "exp2_desc": "Automatización de reportes financieros y desarrollo de dashboards para el área de compras, mejorando la eficiencia en toma de decisiones en un 40%."
+      }, 
     "made_with": "Hecho con"
   }

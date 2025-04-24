@@ -21,7 +21,7 @@ export default {
         
         // 3. Añade estilos personalizados si es necesario
         splineViewer.style.width = '100%';
-        splineViewer.style.height = '500px'; // Ajusta según tus necesidades
+        splineViewer.style.height = '50vh'; // Ajusta según tus necesidades
         
         // 4. Agrega el elemento al DOM
         this.$refs.splineContainer.appendChild(splineViewer);

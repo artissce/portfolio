@@ -13,17 +13,15 @@ const routes = [
     path: '/projects',
     name: 'Projects',
     component: Projects
-  },
-  {
-    path: '/about',
-    name: 'About',
-    component: About
   }
 ]
 
 const router = createRouter({
   history: createWebHistory('/portfolio/'),
-  routes
+  routes,
+  scrollBehavior (to, from, savedPosition) {
+    return { top: 0, behavior: 'smooth' }
+  }
 })
 
 export default router

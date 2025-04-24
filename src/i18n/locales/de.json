@@ -6,12 +6,29 @@
       "about": "Über mich"
     },
     "homePage": {
-      "welcome": "Willkommen in meinem kreativen Raum"
+      "greeting": "Hallo, ich bin Ana CE!",
+      "introduction": "Ich bin eine Informationstechnologie-Ingenieurin mit einer Leidenschaft für die Entwicklung wirkungsvoller digitaler Erlebnisse.",
+      "myProjects": "Meine Projekte",
+      "meetMe": "Lerne mich kennen"
     },
     "language": {
         "en": "Englisch",
         "es": "Spanisch",
         "de": "Deutsch"
+    },
+    "about": {
+      "title": "Über Mich",
+      "intro": "Informationstechnologie-Ingenieurin mit mexikanisch-amerikanischer Staatsangehörigkeit. Ein Semester vor dem Abschluss an der Polytechnischen Universität SLP. Spezialisiert auf Full-Stack-Entwicklung und Datenanalyse mit Fokus auf innovative Lösungen.",
+      "skills_title": "Meine technischen Fähigkeiten",
+      "experience_title": "Berufserfahrung",
+      "exp1_title": "IT-Praktikantin",
+      "exp1_company": "BMW Group ",
+      "exp1_date":" (2025 - Heute)",
+      "exp1_desc": "Entwicklung von Unternehmensanwendungen mit Vue.js/Vuetify und Erstellung interaktiver Dashboards mit Power BI für Echtzeit-Datenanalyse.",
+      "exp2_title": "Einkaufspraktikantin",
+      "exp2_company": "Continental Tire ",
+      "exp2_date":" (Jul 2024 - Dez 2024)",
+      "exp2_desc": "Automatisierung von Finanzberichten und Entwicklung von Dashboards für den Einkaufsbereich, wodurch die Effizienz der Entscheidungsfindung um 40% verbessert wurde."
     },
     "made_with": "Hergestellt mit"
 }
