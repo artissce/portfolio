@@ -3,11 +3,12 @@
       <!-- Contenido específico de la página -->
       <v-container>
         <h1 class="text-h3 mb-4">Bienvenido</h1>
-        <SplineViewer />
+        <Skills />
       </v-container>
     </div>
   </template>
   
   <script setup>
-  import SplineViewer from '../components/SplineViewer.vue'
+  import Skills from '../components/Skills.vue';
+import SplineViewer from '../components/SplineViewer.vue'
   </script>

@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar flat color="transparent" class="px-2 px-sm-4" :elevation="0">
+  <v-app-bar flat color="transparent" class="px-2 px-sm-4" :elevation="0" height="80">
     <router-link to="/" class="d-flex align-center mr-2 mr-sm-3" style="text-decoration: none;">
       <img 
         src="@/assets/logo.png" 

@@ -1,7 +1,7 @@
 <template>
   <section id="about" class="about-section">
     <v-container>
-      <!-- Título corregido para el tema -->
+      <!-- Título -->
       <div class="text-center mb-12">
         <h2 class="text-h3 text-md-h2 font-weight-bold mb-4" :class="titleColor">
           {{ t('about.title') }}
@@ -9,8 +9,10 @@
         <v-divider thickness="3" width="100" :color="dividerColor" class="mx-auto"></v-divider>
       </div>
 
-      <v-row align="center" class="about-content">
-        <v-col cols="12" md="6" :order="$vuetify.display.mobile ? '2' : '1'" class="image-col">
+      <!-- Contenido principal (imagen + texto/experiencia) -->
+      <v-row align="center" class="about-main-content">
+        <!-- Columna izquierda - Imagen -->
+        <v-col cols="12" md="5" class="image-col">
           <div class="profile-wrapper">
             <v-img
               :src="meImg"
@@ -27,50 +29,55 @@
           </div>
         </v-col>
 
-        <!-- Columna de texto -->
-        <v-col cols="12" md="6" order="1" class="text-col">
+        <!-- Columna derecha - Texto y experiencia -->
+        <v-col cols="12" md="7" class="text-col">
           <div class="text-content">
             <p class="text-h6 mb-6" :class="textColor">
               {{ t('about.intro') }}
             </p>
             
-            <!--<div class="skills-section mb-8">
-              <h3 class="text-h5 mb-4" :class="textColor">{{ t('about.skills_title') }}</h3>
-              <div class="skills-grid">
-                <div v-for="(skill, i) in skills" :key="i" class="skill-item">
-                  <v-icon :color="isDark ? 'secondary' : 'primary'">mdi-check-circle</v-icon>
-                  <span :class="textColor">{{ skill }}</span>
-                </div>
-              </div>
-            </div>-->
-
-            <!-- Timeline mejorado -->
-            <div class="carousel-section">
+            <!-- Experiencia -->
+            <div class="experience-section">
               <h3 class="text-h5 mb-4" :class="textColor">{{ t('about.experience_title') }}</h3>
-              <v-slide-group show-arrows class="pa-2">
-                <v-slide-item
+              <v-carousel
+                height="300"
+                show-arrows="hover"
+                cycle
+                hide-delimiter-background
+                :progress="isDark ? 'secondary' : 'primary'"
+              >
+                <v-carousel-item
                   v-for="(exp, i) in experience"
                   :key="i"
                 >
-                <v-card
-                  class="mx-4 pa-4 gradient-card"
-                  width="300"
-                  :class="{ 'dark-card': isDark }"
-                >
-                  <div class="d-flex justify-space-between align-center mb-2">
-                    <v-card-title class="text-h6">{{ exp.title }}</v-card-title>
-                    <v-icon color="primary">mdi-briefcase-outline</v-icon>
-                  </div>
-                  <v-card-subtitle>{{ exp.company }}</v-card-subtitle>
-                  <v-card-text>
-                    <p class="text-caption font-italic mb-2">{{ exp.date }}</p>
-                    <p class="text-body-2">{{ exp.description }}</p>
-                  </v-card-text>
-                </v-card>
-
-                </v-slide-item>
-              </v-slide-group>
+                  <v-card
+                    class="mx-auto pa-4 "
+                    max-width="400"
+                    :class="{ 'dark-card': isDark }"
+                  >
+                    <div class="d-flex justify-space-between align-center mb-2">
+                      <v-card-title class="text-h6">{{ exp.title }}</v-card-title>
+                      <v-icon color="primary">mdi-briefcase-outline</v-icon>
+                    </div>
+                    <v-card-subtitle>{{ exp.company }}</v-card-subtitle>
+                    <v-card-text>
+                      <p class="text-caption font-italic mb-2">{{ exp.date }}</p>
+                      <p class="text-body-2">{{ exp.description }}</p>
+                    </v-card-text>
+                  </v-card>
+                </v-carousel-item>
+              </v-carousel>
             </div>
+          </div> 
+        </v-col>
+      </v-row>
+
+      <!-- Sección de Skills (nube de palabras) -->
+      <v-row class="skills-section">
+        <v-col cols="12">
+          <div class="skills-wrapper">
+            <h3 class="text-h5 mb-6 text-center" :class="textColor">{{ t('about.skills_title') }}</h3>
+            <Skills :skills="skills" :textColor="textColor" />
           </div>
         </v-col>
       </v-row>
@@ -83,6 +90,7 @@ import { useI18n } from 'vue-i18n'
 import { useTheme } from 'vuetify'
 import { computed } from 'vue'
 import meImg from '../assets/me.jpg'
+import Skills from '../components/Skills.vue'
 
 
 const { t } = useI18n()
@@ -100,10 +108,11 @@ const skills = [
 ]
 
 const technologies = [
-  { icon: 'mdi-vuejs', color: 'primary' },
-  { icon: 'mdi-language-javascript', color: 'amber' },
-  { icon: 'mdi-language-typescript', color: 'blue' },
-  { icon: 'mdi-nodejs', color: 'green' }
+  { icon: 'mdi-vuejs', color: 'green' },                
+  { icon: 'mdi-language-java', color: 'deep-orange' }, 
+  { icon: 'mdi-language-csharp', color: 'indigo' },    
+  { icon: 'mdi-language-cpp', color: 'blue' },         
+  { icon: 'mdi-database', color: 'orange' }            
 ]
 
 const experience = [
@@ -128,14 +137,17 @@ const experience = [
 .about-section {
   padding: 80px 0;
   position: relative;
-  overflow: hidden;
 }
 
-/* Efecto de borde dinámico */
+/* Contenido principal */
+.about-main-content {
+  margin-bottom: 80px; /* Espacio antes de los skills */
+}
+
 .profile-wrapper {
   position: relative;
-  max-width: 500px;
-  margin: 0 auto;
+  max-width: 400px;
+  margin: 0 auto 40px;
   padding: 15px;
   background: linear-gradient(
     45deg,
@@ -168,45 +180,70 @@ const experience = [
   backdrop-filter: blur(8px);
 }
 
+/* Sección de Skills */
+.skills-section {
+  margin-top: 60px;
+  padding-top: 60px;
+  position: relative;
+}
+
+.skills-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: rgba(var(--v-theme-primary), 0.5);
+}
+
+.skills-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Experiencia */
+.experience-section {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+
+/* Modo oscuro */
 .dark-tech {
   background: rgba(var(--v-theme-background-darken), 0.9) !important;
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  gap: 10px;
-}
-
-.skill-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 6px 10px;
-  border-radius: 6px;
-  background: rgba(var(--v-theme-primary), 0.05);
-  transition: all 0.3s ease;
-}
-
-.timeline-card {
-  transition: all 0.3s ease;
-  border-left: 4px solid rgb(var(--v-theme-primary));
-  background: rgba(var(--v-theme-background-light), 0.8);
 }
 
 .dark-card {
   background: rgba(var(--v-theme-background-darken), 0.8) !important;
 }
 
-/* Responsive perfecto */
+/* Responsive */
 @media (max-width: 960px) {
   .about-section {
     padding: 60px 0;
   }
   
+  .about-main-content {
+    margin-bottom: 60px;
+  }
+  
+  .skills-section {
+    margin-top: 40px;
+    padding-top: 40px;
+  }
+  
   .profile-wrapper {
-    max-width: 350px;
-    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .profile-wrapper {
+    padding: 10px;
+    margin-bottom: 50px;
   }
   
   .tech-icons {
@@ -216,57 +253,13 @@ const experience = [
     width: fit-content;
   }
   
-  .skills-grid {
-    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  .skills-section {
+    margin-top: 30px;
+    padding-top: 30px;
   }
   
-  .v-timeline-item {
-    flex-direction: column-reverse;
-  }
-  
-  .v-timeline-item__opposite {
-    padding-bottom: 0 !important;
+  .skills-section::before {
+    width: 80px;
   }
 }
-
-@media (max-width: 600px) {
-  .profile-wrapper {
-    padding: 10px;
-  }
-  
-  .tech-icons {
-    gap: 10px;
-    padding: 8px 16px;
-  }
-  
-  .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-.carousel-section .v-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  border-radius: 16px;
-  overflow: hidden;
-  background: rgba(var(--v-theme-surface), 0.9);
-}
-
-.carousel-section .v-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-}
-.gradient-card {
-  background-image: linear-gradient(
-    135deg,
-    rgba(var(--v-theme-primary), 0.1),
-    rgba(var(--v-theme-secondary), 0.05)
-  );
-}
-.v-slide-group__content {
-  scroll-behavior: smooth;
-}
-
-
-
 </style>
