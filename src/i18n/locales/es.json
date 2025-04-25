@@ -9,7 +9,8 @@
       "greeting": "¡Hola, soy Ana CE!",
       "introduction": "Soy una ingeniera en tecnologías de la información, apasionada por crear experiencias digitales impactantes.",
       "myProjects": "Mis proyectos",
-      "meetMe": "Conóceme"
+      "meetMe": "Conóceme",
+      "featuredProjects": "Proyectos destacados"
     },
     "language": {
         "en": "Ingles",
@@ -30,5 +31,80 @@
       "exp2_date":" (Jul 2024 - Dic 2024)",
       "exp2_desc": "Automatización de reportes financieros y desarrollo de dashboards para el área de compras, mejorando la eficiencia en toma de decisiones en un 40%."
       }, 
-    "made_with": "Hecho con"
+    "made_with": "Hecho con",
+    "projects": {
+      "title": "Mis Proyectos",
+      "search": "Buscar proyectos...",
+      "filters": {
+        "all": "Todos",
+        "web": "Web",
+        "mobile": "Mobile"
+      },
+      "noResults": "No se encontraron proyectos",
+      "modal": {
+        "category": "Categoría:",
+        "demo": "Ver Demo",
+        "code": "Código Fuente",
+        "close": "Cerrar"
+      },
+      "items": {
+        "portfolio": {
+          "title": "Portfolio Vue",
+          "description": "Mi portfolio personal construido con Vue.js y Vuetify"
+        },
+        "fsharp-portfolio": {
+          "title": "Portfolio F#",
+          "description": "Repositorio donde se muestra mis ejercicios de F#"
+        },
+        "github-page": {
+          "title": "Github Page",
+          "description": "Mi anterior portfolio construido con Github Pages, pendiente en cambios"
+        },
+        "cstat": {
+          "title": "CStat (Progra1 UPSLP)",
+          "description": "Proyecto de programación 1 de la UPSLP - Sistema de estadísticas en C"
+        },
+        "progra2":{
+          "title": "Progra2 (UPSLP)",
+          "description": "Repositorio donde se encuentran mis ejercicios de programación 2 en C++"
+        },
+        "progra3": {
+          "title": "Progra3 (UPSLP)",
+          "description": "Repositorio donde se encuentran mis ejercicios de programación 3 en Java"
+        },
+        "coffee-shop": {
+          "title": "Coffee Shop",
+          "description": "Sistema de ventas para cafetería desarrollado en Java"
+        },
+        "automated-farm": {
+          "title": "Automated Farm",
+          "description": "Sistema de control de granja automatizada desarrollado en Arduino"
+        },
+        "catman": {
+          "title": "Catman",
+          "description": "Juego desarrollado en Java inspirado en Pacman para la materia de Programación Orientada a Objetos"
+        },
+        "waffles-react": {
+          "title": "Waffles React",
+          "description": "Gestion de ventas de waffles, desarrollado en React"
+        },
+        "scholar-manager": {
+          "title": "Scholar Manager",
+          "description": "Sistema de gestión escolar desarrollado en Python"
+        }
+      },
+      "hoverMessage": "Haz clic para más info",
+      "view_all_projects": "Ver todos los proyectos",
+      "featured": {
+        "1": {
+          "title": "Tienda Online",
+          "description": "E-commerce con Vue y Firebase."
+        },
+        "2": {
+          "title": "App Móvil",
+          "description": "Aplicación multiplataforma desarrollada con Flutter."
+        }
+      }
+    }
+
   }

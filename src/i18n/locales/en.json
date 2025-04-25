@@ -9,7 +9,8 @@
       "greeting": "Hello, I'm Ana CE!",
       "introduction": "I am an Information Technology Engineer, passionate about creating impactful digital experiences.",
       "myProjects": "My Projects",
-      "meetMe": "Meet Me"
+      "meetMe": "Meet Me",
+      "featuredProjects": "Featured Projects"
     },
     "language": {
         "en": "English",
@@ -30,5 +31,80 @@
       "exp2_date":" (Jul 2024 - Dec 2024)",
       "exp2_desc": "Automation of financial reports and development of dashboards for the purchasing area, improving decision-making efficiency by 40%."
     },
-    "made_with": "Made with"
+    "made_with": "Made with",
+    "projects": {
+      "title": "My Projects",
+      "search": "Search projects...",
+      "filters": {
+        "all": "All",
+        "web": "Web",
+        "mobile": "Mobile"
+      },
+      "noResults": "No projects found",
+      "modal": {
+        "category": "Category:",
+        "demo": "View Demo",
+        "code": "Source Code",
+        "close": "Close"
+      },
+      "items": {
+        "portfolio": {
+          "title": "Vue Portfolio",
+          "description": "My personal portfolio built with Vue.js and Vuetify"
+        },
+        "fsharp-portfolio": {
+          "title": "F# Portfolio",
+          "description": "Repository showcasing my F# exercises and projects"
+        },
+        "github-page": {
+          "title": "GitHub Page",
+          "description": "My previous portfolio built with GitHub Pages, pending updates"
+        },
+        "cstat": {
+          "title": "CStat (Programming 1 UPSLP)",
+          "description": "Programming 1 project at UPSLP - Statistics system in C"
+        },
+        "progra2": {
+          "title": "Programming 2 (UPSLP)",
+          "description": "Repository containing my C++ programming exercises"
+        },
+        "progra3": {
+          "title": "Programming 3 (UPSLP)",
+          "description": "Repository containing my Java programming exercises"
+        },
+        "coffee-shop": {
+          "title": "Coffee Shop",
+          "description": "Sales system for coffee shop developed in Java"
+        },
+        "automated-farm": {
+          "title": "Automated Farm",
+          "description": "Automated farm control system developed with Arduino"
+        },
+        "catman": {
+          "title": "Catman",
+          "description": "Java game inspired by Pacman for Object-Oriented Programming course"
+        },
+        "waffles-react": {
+          "title": "Waffles React",
+          "description": "Waffle sales management system developed with React"
+        },
+        "scholar-manager": {
+          "title": "Scholar Manager",
+          "description": "School management system developed in Python"
+        }
+      },
+      "hoverMessage": "Click for more info",
+      "view_all_projects": "View all projects",
+      "featured": {
+        "1": {
+          "title": "Online Store",
+          "description": "E-commerce using Vue and Firebase."
+        },
+        "2": {
+          "title": "Mobile App",
+          "description": "Cross-platform app developed with Flutter."
+        }
+      }
+    }
+
   }

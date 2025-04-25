@@ -74,10 +74,21 @@
   <section id="about" class="about-section">
     <About />
   </section>
+  <v-container class="py-8">
+    <h2 class="text-h4 font-weight-bold mb-6">{{ t('homePage.featuredProjects') }}</h2>
+    <FeaturedProjects />
+
+    <div class="text-center mt-4">
+      <RouterLink to="/projects">
+        <v-btn color="primary">{{t('projects.view_all_projects')}}</v-btn>
+      </RouterLink>
+    </div>
+  </v-container>
 </template>
 
 <script setup>
 import SplineViewer from '@/components/SplineViewer.vue'
+import FeaturedProjects from '@/components/FeaturedProjects.vue'
 import About from '@/views/About.vue'
 import { useI18n } from 'vue-i18n';
 
