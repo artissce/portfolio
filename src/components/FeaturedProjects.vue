@@ -95,36 +95,52 @@
     </div>
   </template>
   
-  <script setup>
-  import { ref } from 'vue'
-  import ProjectCard from '@/components/ProjectCard.vue'
-  import { useI18n } from 'vue-i18n'
-  
-  const { t } = useI18n()
-  const dialog = ref(false)
-  const selectedProject = ref(null)
-  
-  const destacados = [
-    {
-      id: 1,
-      image: "https://via.placeholder.com/600x400?text=Tienda+Online",
-      techs: ["Vue", "Firebase"],
-      category: "Web",
-      demoUrl: "#",
-      codeUrl: "#"
-    },
-    {
-      id: 2,
-      image: "https://via.placeholder.com/600x400?text=App+Movil",
-      techs: ["Flutter"],
-      category: "Mobile",
-      demoUrl: "#",
-      codeUrl: "#"
-    }
-  ]
-  
-  const openDialog = (project) => {
-    selectedProject.value = project
-    dialog.value = true
+<script setup>
+import { ref } from 'vue'
+import ProjectCard from '@/components/ProjectCard.vue'
+import { useI18n } from 'vue-i18n'
+import coffee from '../assets/coffee.jpg'
+import arduino from '../assets/arduino.jpg'
+import waffles from '../assets/waffles.jpg'
+import school from '../assets/school.jpg'
+
+const { t } = useI18n()
+const dialog = ref(false)
+const selectedProject = ref(null)
+
+const destacados = [
+  {
+    id: 1,
+    category: "python",
+    techs: ["Python"],
+    image: school,
+    codeUrl: "https://github.com/artissce/ScholarMaterialManager"
+  },
+  {
+    id: 2,
+    category: "web",
+    techs: ["React", "JavaScript"],
+    image: waffles,
+    codeUrl: "https://github.com/artissce/Proyecto_Waffles_React"
+  },
+  {
+    id: 3,
+    category: "java",
+    techs: ["Java", "JavaFX"],
+    image: coffee,
+    codeUrl: "https://github.com/artissce/Coffee-Shop-Sales-System"
+  },
+  {
+    id:4,
+    category: "c",
+    techs: ["Arduino", "C"],
+    image: arduino,
+    codeUrl: "https://github.com/artissce/Automated-Farm-System"
   }
-  </script>
+]
+
+const openDialog = (project) => {
+  selectedProject.value = project
+  dialog.value = true
+}
+</script>

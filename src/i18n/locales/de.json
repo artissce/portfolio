@@ -97,12 +97,20 @@
       "view_all_projects": "Alle Projekte ansehen",
       "featured": {
         "1": {
-          "title": "Online-Shop",
-          "description": "E-Commerce mit Vue und Firebase."
+          "title": "Schülerverwaltung",
+          "description": "Schulverwaltungssystem entwickelt in Python"
         },
         "2": {
-          "title": "Mobile App",
-          "description": "Cross-Plattform-App mit Flutter."
+          "title": "Waffeln React",
+          "description": "Waffelverkauf-Management, entwickelt in React"
+        },
+        "3": {
+          "title": "Kaffeehaus",
+          "description": "Verkaufssystem für ein Kaffeehaus, entwickelt in Java"
+        },
+        "4": {
+          "title": "Automatisierter Bauernhof",
+          "description": "Steuerungssystem für einen automatisierten Bauernhof, entwickelt in Arduino"
         }
       }
     }

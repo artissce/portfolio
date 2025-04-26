@@ -97,12 +97,20 @@
       "view_all_projects": "Ver todos los proyectos",
       "featured": {
         "1": {
-          "title": "Tienda Online",
-          "description": "E-commerce con Vue y Firebase."
+          "title": "Gestor de Material Escolar",
+          "description": "Sistema de gestión escolar desarrollado en Python"
         },
         "2": {
-          "title": "App Móvil",
-          "description": "Aplicación multiplataforma desarrollada con Flutter."
+          "title": "Waffles React",
+          "description": "Gestión de ventas de waffles, desarrollado en React"
+        },
+        "3": {
+          "title": "Cafetería",
+          "description": "Sistema de ventas para cafetería desarrollado en Java"
+        },
+        "4": {
+          "title": "Granja Automatizada",
+          "description": "Sistema de control de granja automatizada desarrollado en Arduino"
         }
       }
     }

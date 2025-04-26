@@ -97,12 +97,20 @@
       "view_all_projects": "View all projects",
       "featured": {
         "1": {
-          "title": "Online Store",
-          "description": "E-commerce using Vue and Firebase."
+          "title": "Scholar Manager",
+          "description": "School management system developed in Python"
         },
         "2": {
-          "title": "Mobile App",
-          "description": "Cross-platform app developed with Flutter."
+          "title": "Waffles React",
+          "description": "Waffle sales management, developed in React"
+        },
+        "3": {
+          "title": "Coffee Shop",
+          "description": "Sales system for a coffee shop developed in Java"
+        },
+        "4": {
+          "title": "Automated Farm",
+          "description": "Control system for an automated farm developed in Arduino"
         }
       }
     }
