@@ -31,6 +31,20 @@
       "exp2_date":" (Jul 2024 - Dic 2024)",
       "exp2_desc": "Automatización de reportes financieros y desarrollo de dashboards para el área de compras, mejorando la eficiencia en toma de decisiones en un 40%."
       }, 
+    "certifications": {
+      "title": "Certificaciones",
+      "filters": {
+        "all": "Todos",
+        "dev": "Desarrollo",
+        "data": "Datos",
+        "networking": "Redes",
+        "security": "Ciberseguridad",
+        "office": "Ofimática",
+        "management": "Gestión de Proyectos",
+        "it": "Fundamentos IT",
+        "emergingTech": "Tecnologías Emergentes"
+      }
+    },
     "made_with": "Hecho con",
     "projects": {
       "title": "Mis Proyectos",

@@ -75,6 +75,10 @@
     <About />
   </section>
   <v-container class="py-8">
+      <h2 class="text-h4 font-weight-bold mb-6">{{ t('certifications.title') }}</h2>
+      <Certifications />
+    </v-container>
+  <v-container class="py-8">
     <h2 class="text-h4 font-weight-bold mb-6">{{ t('homePage.featuredProjects') }}</h2>
     <FeaturedProjects />
 
@@ -91,6 +95,7 @@ import SplineViewer from '@/components/SplineViewer.vue'
 import FeaturedProjects from '@/components/FeaturedProjects.vue'
 import About from '@/views/About.vue'
 import { useI18n } from 'vue-i18n';
+import Certifications from '../components/Certifications.vue';
 
 
 const {t} = useI18n();

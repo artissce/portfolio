@@ -31,6 +31,20 @@
       "exp2_date":" (Jul 2024 - Dec 2024)",
       "exp2_desc": "Automation of financial reports and development of dashboards for the purchasing area, improving decision-making efficiency by 40%."
     },
+     "certifications": {
+      "title": "Certifications",
+      "filters": {
+        "all": "All",
+        "dev": "Development",
+        "data": "Data",
+        "networking": "Networking",
+        "security": "Security",
+        "office": "Office Suite",
+        "management": "Project Management",
+        "it": "IT Fundamentals",
+        "emergingTech": "Emerging Technologies"
+      }
+    },
     "made_with": "Made with",
     "projects": {
       "title": "My Projects",

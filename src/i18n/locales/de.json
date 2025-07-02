@@ -31,6 +31,20 @@
       "exp2_date":" (Jul 2024 - Dez 2024)",
       "exp2_desc": "Automatisierung von Finanzberichten und Entwicklung von Dashboards für den Einkaufsbereich, wodurch die Effizienz der Entscheidungsfindung um 40% verbessert wurde."
     },
+    "certifications": {
+      "title": "Zertifizierungen",
+      "filters": {
+        "all": "Alle",
+        "dev": "Entwicklung",
+        "data": "Daten",
+        "networking": "Netzwerke",
+        "security": "Cybersicherheit",
+        "office": "Bürosoftware",
+        "management": "Projektmanagement",
+        "it": "IT-Grundlagen",
+        "emergingTech": "Neue Technologien"
+      }
+    },
     "made_with": "Hergestellt mit",
     "projects": {
       "title": "Meine Projekte",
